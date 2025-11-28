@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Mail, Gift } from "lucide-react";
 
@@ -19,6 +20,18 @@ export function Hero() {
             </div>
 
             <div className="container mx-auto px-4 py-20 md:py-32 relative z-10 text-center text-white">
+                {/* Logo do Instituto */}
+                <div className="flex justify-center mb-6">
+                    <Image
+                        src="/logo-instituto.png"
+                        alt="Instituto Anderson Costa"
+                        width={300}
+                        height={80}
+                        className="h-16 md:h-20 w-auto"
+                        priority
+                    />
+                </div>
+
                 <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-1.5 rounded-full text-natal-gold font-medium text-sm mb-6 border border-white/20">
                     <Mail className="w-4 h-4" />
                     <span>Natal Abençoado – Instituto Anderson Costa</span>

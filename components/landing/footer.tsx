@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Mail, Phone, MapPin, Instagram, Facebook } from "lucide-react";
 
 export function Footer() {
@@ -6,6 +7,16 @@ export function Footer() {
             <div className="container mx-auto px-4">
                 <div className="grid md:grid-cols-3 gap-8 mb-8">
                     <div>
+                        {/* Logo do Instituto */}
+                        <div className="mb-4">
+                            <Image
+                                src="/logo-instituto.png"
+                                alt="Instituto Anderson Costa"
+                                width={250}
+                                height={70}
+                                className="h-12 w-auto"
+                            />
+                        </div>
                         <h3 className="text-xl font-bold font-heading mb-4 text-natal-gold">
                             Instituto Anderson Costa
                         </h3>
