@@ -65,9 +65,9 @@ export function Footer() {
                             <li className="flex items-start gap-3">
                                 <MapPin className="w-5 h-5 text-natal-gold flex-shrink-0" />
                                 <span>
-                                    Rua Exemplo, 123 - Bairro
+                                    Rua Alcides Lins, 320 - Venda Nova
                                     <br />
-                                    Natal - RN
+                                    Belo Horizonte - MG - CEP 31510-030
                                 </span>
                             </li>
                             <li className="flex items-center gap-3">
