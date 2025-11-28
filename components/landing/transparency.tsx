@@ -1,5 +1,3 @@
-import { Card, CardContent } from "@/components/ui/card";
-
 export function Transparency() {
     return (
         <section className="py-20 bg-natal-red text-white">

@@ -1,4 +1,3 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { UserPlus, Camera, CheckCircle, Gift, MapPin, Smile } from "lucide-react";
 
 export function HowItWorks() {
@@ -29,28 +28,24 @@ export function HowItWorks() {
 
                         <div className="relative border-l-2 border-blue-200 ml-6 space-y-10 pb-4">
                             <Step
-                                number="1"
                                 title="Cadastro simples"
                                 description="Você preenche um cadastro com os dados da criança e do responsável."
                                 icon={<UserPlus className="w-5 h-5 text-blue-600" />}
                                 colorClass="bg-blue-100 text-blue-600 border-blue-200"
                             />
                             <Step
-                                number="2"
                                 title="Cartinha para o Papai Noel"
                                 description="A criança escreve a cartinha à mão. Você tira uma foto e envia pelo site."
                                 icon={<Camera className="w-5 h-5 text-blue-600" />}
                                 colorClass="bg-blue-100 text-blue-600 border-blue-200"
                             />
                             <Step
-                                number="3"
                                 title="Análise da equipe"
                                 description="Nossa equipe avalia a cartinha para garantir segurança e pedidos compatíveis."
                                 icon={<CheckCircle className="w-5 h-5 text-blue-600" />}
                                 colorClass="bg-blue-100 text-blue-600 border-blue-200"
                             />
                             <Step
-                                number="4"
                                 title="Um abençoador adota"
                                 description="Alguém escolhe ajudar sua criança, compra um presente e realiza a entrega."
                                 icon={<Gift className="w-5 h-5 text-blue-600" />}
@@ -77,28 +72,24 @@ export function HowItWorks() {
 
                         <div className="relative border-l-2 border-green-200 ml-6 space-y-10 pb-4">
                             <Step
-                                number="1"
                                 title="Cadastre-se como Abençoador"
                                 description="Informe seus dados básicos (nome, telefone, e-mail)."
                                 icon={<UserPlus className="w-5 h-5 text-natal-green" />}
                                 colorClass="bg-green-100 text-natal-green border-green-200"
                             />
                             <Step
-                                number="2"
                                 title="Escolha uma cartinha"
                                 description="Veja os sonhos das crianças, com nome, idade e bairro."
                                 icon={<Smile className="w-5 h-5 text-natal-green" />}
                                 colorClass="bg-green-100 text-natal-green border-green-200"
                             />
                             <Step
-                                number="3"
                                 title="Compre o presente"
                                 description="Com base no pedido da cartinha, você compra um presente dentro da sua realidade."
                                 icon={<Gift className="w-5 h-5 text-natal-green" />}
                                 colorClass="bg-green-100 text-natal-green border-green-200"
                             />
                             <Step
-                                number="4"
                                 title="Entregue no ponto de coleta"
                                 description="Entrega em um dos pontos oficiais do Instituto ou conforme orientação enviada."
                                 icon={<MapPin className="w-5 h-5 text-natal-green" />}
@@ -117,13 +108,11 @@ export function HowItWorks() {
 }
 
 function Step({
-    number,
     title,
     description,
     icon,
     colorClass,
 }: {
-    number: string;
     title: string;
     description: string;
     icon: React.ReactNode;
